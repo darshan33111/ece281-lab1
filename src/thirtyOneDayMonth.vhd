@@ -16,7 +16,7 @@
 --| DESCRIPTION   :  This file implements the thirtyOneDaMonth lab.  Using a 4
 --| switch input, the circuit will light up whenever the 4 switches represent a
 --| month with 31 days
---|
+--| DOCUMENTATION: I got help from C3C Litman, who explained to me that my MUX logic could be much shorter
 --|
 --+----------------------------------------------------------------------------
 --|
