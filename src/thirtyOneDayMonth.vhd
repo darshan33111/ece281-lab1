@@ -11,7 +11,7 @@
 --| ---------------------------------------------------------------------------
 --|
 --| FILENAME      : thirtyOneDayMonth.vhd
---| AUTHOR(S)     : Capt Dan Johnson, C3C Darshan Kiran Koushik 
+--| AUTHOR(S)     : Capt Dan Johnson, C3C Darshan Kiran Koushik
 --| CREATED       : 12/12/2019 Last Modified 06/24/2020
 --| DESCRIPTION   :  This file implements the thirtyOneDaMonth lab.  Using a 4
 --| switch input, the circuit will light up whenever the 4 switches represent a
@@ -80,16 +80,18 @@ begin
 	w_sel(2) <= i_A;
 	
 	--enter your logic here to implement the mux.  See VHDL reference sheet for MUX syntax.	
-	with w_sel select 
-	o_Y <= '1' when "000", 
-	       i_D when "001", 
-	       i_D when "010", 
-	       i_D when "011", 
-	       not i_D when "100", 
-	       not i_D when "101", 
-	       '1' when "110",  
-	       '0' when "111", 
-	       '0' when others; 
+	
+	--with w_sel select 
+	--o_Y <= '1' when "000", 
+	       --i_D when "001", 
+	       --i_D when "010", 
+	       --i_D when "011", 
+	       --not i_D when "100", 
+	       --not i_D when "101", 
+	       --'1' when "110",  
+	       --'0' when "111", 
+	       --'0' when others; 
+	o_Y <= (not i_A and i_D) or (i_A and not i_D); 
 
 	---------------------------------------------------------------	
 end thirtyOneDayMonth_arch;
