@@ -11,7 +11,7 @@
 --| ---------------------------------------------------------------------------
 --|
 --| FILENAME      : thirtyOneDayMonth.vhd
---| AUTHOR(S)     : Capt Dan Johnson, C3C Darshan Kiran Koushik
+--| AUTHOR(S)     : Capt Dan Johnson, C3C Darshan Kiran Koushik 
 --| CREATED       : 12/12/2019 Last Modified 06/24/2020
 --| DESCRIPTION   :  This file implements the thirtyOneDaMonth lab.  Using a 4
 --| switch input, the circuit will light up whenever the 4 switches represent a
