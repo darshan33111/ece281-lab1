@@ -75,23 +75,23 @@ begin
 	-- CONCURRENT STATEMENTS---------------------------------------
 	--assigning names to reflect original schematics (for ease of understanding if you wish to)
 	w_sel(0) <= i_C;	-- one
-	--finish assigning signals
+	--finish assiging signals
 	w_sel(1) <= i_B;
 	w_sel(2) <= i_A;
 	
 	--enter your logic here to implement the mux.  See VHDL reference sheet for MUX syntax.	
 	
-	--with w_sel select 
-	--o_Y <= '1' when "000", 
-	       --i_D when "001", 
-	       --i_D when "010", 
-	       --i_D when "011", 
-	       --not i_D when "100", 
-	       --not i_D when "101", 
-	       --'1' when "110",  
-	       --'0' when "111", 
-	       --'0' when others; 
-	o_Y <= (not i_A and i_D) or (i_A and not i_D); 
+	with w_sel select 
+	o_Y <= '1' when "000", 
+	       i_D when "001", 
+	       i_D when "010", 
+	       i_D when "011", 
+	       not i_D when "100", 
+	       not i_D when "101", 
+	       '1' when "110",  
+	       '0' when "111", 
+	       '0' when others; 
+	--o_Y <= (not i_A and i_D) or (i_A and not i_D); 
 
 	---------------------------------------------------------------	
 end thirtyOneDayMonth_arch;

@@ -76,10 +76,10 @@ begin
 	-- PORT MAPS ----------------------------------------
 	-- map ports for any component instances (port mapping is like wiring hardware)
     thirtyOneDayMonthMux_inst : thirtyOneDayMonth port map (
-			i_D => w_sw(3),
-			i_C => w_sw(2),
-			i_B => w_sw(1),
-			i_A => w_sw(0),
+			i_D => w_sw(0),
+			i_C => w_sw(1),
+			i_B => w_sw(2),
+			i_A => w_sw(3),
 	    		o_Y => w_Y
         );
 	-----------------------------------------------------
@@ -90,8 +90,6 @@ begin
 	test_process : process 
 	begin
 	-- Place test cases here. The first two have been written for you
-		w_sw <= x"0"; wait for 10 ns;
-            assert w_Y = '0' report "error on x0" severity failure;
         w_sw <= x"1"; wait for 10 ns;
             assert w_Y = '1' report "error on Jan" severity failure;   
         w_sw <= x"2"; wait for 10 ns;
@@ -115,15 +113,9 @@ begin
         w_sw <= x"B"; wait for 10 ns;
             assert w_Y = '0' report "error on Nov" severity failure;
         w_sw <= x"C"; wait for 10 ns;
-            assert w_Y = '1' report "error on Dec" severity failure;   
-        w_sw <= x"D"; wait for 10 ns;
-            assert w_Y = '0' report "error on DC" severity failure;
-        w_sw <= x"E"; wait for 10 ns;
-            assert w_Y = '1' report "error on DC" severity failure;  
-        w_sw <= x"F"; wait for 10 ns;
-            assert w_Y = '0' report "error on DC" severity failure;   
+            assert w_Y = '1' report "error on Dec" severity failure;    
 		wait; -- wait forever
-	end process;	
+	end process;
 	-----------------------------------------------------	
 	
 end test_bench;

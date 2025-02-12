@@ -1,7 +1,7 @@
-Running: xsim.dir/thirtyOneDayMonth_tb_behav/xsimk.exe -simmode gui -wdb thirtyOneDayMonth_tb_behav.wdb -simrunnum 0 -socket 61446
+Running: xsim.dir/thirtyOneDayMonth_tb_behav/xsimk.exe -simmode gui -wdb thirtyOneDayMonth_tb_behav.wdb -simrunnum 0 -socket 52953
 Design successfully loaded
-Design Loading Memory Usage: 27980 KB (Peak: 27980 KB)
-Design Loading CPU Usage: 1046 ms
+Design Loading Memory Usage: 27252 KB (Peak: 27252 KB)
+Design Loading CPU Usage: 1640 ms
 Simulation completed
-Simulation Memory Usage: 29044 KB (Peak: 29044 KB)
-Simulation CPU Usage: 1124 ms
+Simulation Memory Usage: 28220 KB (Peak: 28220 KB)
+Simulation CPU Usage: 1655 ms
