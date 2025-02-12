@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: error on Jul
+Time: 80 ns  Iteration: 0  Process: /thirtyOneDayMonth_tb/test_process  File: C:/Users/C27Darshan.KiranKou/ece281/ece281-lab1/src/thirtyOneDayMonth_tb.vhd
+$finish called at time : 80 ns : File "C:/Users/C27Darshan.KiranKou/ece281/ece281-lab1/src/thirtyOneDayMonth_tb.vhd" Line 108
